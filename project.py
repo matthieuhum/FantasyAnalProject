@@ -7,7 +7,8 @@ import time
 
 
 #%% Call API
-xmls = xmlsoccer.XmlSoccer(api_key = "CJLWGIFMFFDGRIXTRUFZHLFXPNDQAKSONGUOPRIZCKVAHDIERJ" , use_demo=True)
+api_key = open('API_KEY.txt').read()
+xmls = xmlsoccer.XmlSoccer(api_key = api_key , use_demo=True)
 
 #%% Check Spam or API_key
 #xmls.call_api(method='CheckApiKey')
